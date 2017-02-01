@@ -18,6 +18,8 @@ public class Main {
         LoadLevels(scenes, lines);
         int i = 0;
         while((Player.hp > 0) && (i < scenes.size())) {scenes.get(i).Launch(); i++;}
+        if (Player.hp > 0) System.out.println("Congrats");
+        else System.out.println("You are dead");
     }
 
     static void LoadLevels(LinkedList<Scene> scenes, LinkedList<String> lines){

@@ -18,5 +18,7 @@ public class Event {
         Player.hp += hp;
         Player.mp += mana;
         Player.gold += gold;
+        System.out.println("Got " + hp + " health, " + mana + " mana, " + gold + " gold");
+        System.out.println("Current health : " + Player.hp + ", mana : " + Player.mp + ", gold : " + Player.gold);
     }
 }
